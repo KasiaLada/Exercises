@@ -1,7 +1,7 @@
 'use strict';
 // moje rozwiązanie:
 
-1
+// 1
 
 function test() {
 	function calculateAverageTemperature(temperatureData, callback) {
