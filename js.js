@@ -1,52 +1,44 @@
-'use strict';
+"use strict";
 // moje rozwiązanie:
 
-// 1
 
 function test() {
-	function calculateAverageTemperature(temperatureData, callback) {
-		let temperatureData = [23, 24, 22, 25, 21]; 
-        // ja deklarowałam tablicę tutaj, a w rozwiązaniu jest poza funkcją?
-		let sum = temperatureData.reduce((previousValue, number) => {
-			return previousValue + number;
-		}, 0);
-        // Tutaj mam }, a w rozwiązaniu go nie ma
-		let average = sum / temperatureData.length;
-
-		callback(average);
-	}
-
-	function displayAverageTemperature(average) {
-		console.log(`Srednia temperatura: ${average}`);
-	}
-	calculateAverageTemperature(temperatureData, displayAverageTemperature);
-	test();
+     // Miejsce na kod JS
+     const numbers = [1, 2, 3, 4, 5];
+     
+     const calculateSum = (numbers) => {
+         
+         sum = 0;
+         
+         numbers.forEach((element) => {
+    sum += value
+  return sum;
+};
+     calculateSum(numbers);
+     let result = console.log(calculateSum)
 }
-// -----------------------------------
 
-// poprawne rozwiązanie
-// // 
+test();
+
+// _________________________
+
+// prawidłowe rozwiazanie
 
 // "use strict";
  
 // function test() {
 //     // Miejsce na kod JS
-//     function calculateAverageTemperature(temperatureData, callback) {
-//         const sum = temperatureData.reduce(
-//             (total, temperature) => total + temperature,
-//             0
-//         );
-//         const average = sum / temperatureData.length;
-//         callback(average);
-//     }
+//     const calculateSum = (array) => {
+//         let sum = 0;
+//         array.forEach((number) => {
+//             sum += number;
+//         });
+//         return sum;
+//     };
  
-//     const temperatureData = [23, 24, 22, 25, 21];
- 
-//     function displayAverageTemperature(average) {
-//         console.log(`Srednia temperatura: ${average}`);
-//     }
- 
-//     calculateAverageTemperature(temperatureData, displayAverageTemperature);
+//     const numbers = [1, 2, 3, 4, 5];
+//     const result = calculateSum(numbers);
+//     console.log(result);
 // }
  
 // test();
