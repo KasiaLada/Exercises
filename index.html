@@ -7,37 +7,35 @@
 	</head>
 	<body>
 
-        <!-- Treść zadania :
-        Funkcja zwrotna (callback)
-Opis ćwiczenia:
+        <!-- Opis ćwiczenia:
 
-Napisz funkcję w JavaScript, która oblicza średnią temperaturę na podstawie listy pomiarów temperatury w ciągu dnia. Funkcja ta ma wykorzystać funkcję zwrotną (callback) do przetwarzania danych bez interakcji z użytkownikiem.
+Masz daną tablicę liczb, a twoim celem jest obliczenie sumy tych liczb przy użyciu funkcji strzałkowej.
 
 
 
 Wykonaj poniższe kroki:
 
-Zdefiniuj funkcję o nazwie calculateAverageTemperature, która będzie przyjmować dwa argumenty: temperatureData (tablica pomiarów temperatury) i callback (funkcja zwrotna).
+Zdefiniuj tablicę liczb:
 
-Wewnątrz funkcji calculateAverageTemperature oblicz sumę wszystkich temperatur z tablicy temperatureData i zapisz ją do zmiennej sum.
+const numbers = [1, 2, 3, 4, 5];.
 
-Oblicz średnią temperaturę przez podzielenie sumy sum przez liczbę pomiarów temperatury w tablicy temperatureData. Zapisz wynik do zmiennej average.
+Utwórz funkcję strzałkową o nazwie calculateSum, która przyjmuje tablicę jako parametr i zwraca sumę wszystkich liczb w tej tablicy.
 
-Wywołaj funkcję zwrotną callback i przekaż jej wynikową średnią temperaturę jako argument.
+Wewnątrz funkcji calculateSum zadeklaruj zmienną sum i ustaw jej początkową wartość na 0.
 
-Zdefiniuj przykładową tablicę pomiarów temperatury (np. [23, 24, 22, 25, 21]).
+Przeiteruj się po wszystkich elementach tablicy array za pomocą pętli forEach i dodaj każdą liczbę do zmiennej sum.
 
-Stwórz funkcję zwrotną o nazwie displayAverageTemperature, która będzie przyjmować jeden argument average (średnia temperatura).
+Na koniec zwróć wartość zmiennej sum.
 
-Wewnątrz funkcji displayAverageTemperature wyświetl wynikową średnią temperaturę na konsoli lub innym miejscu wizualizacji.
-
-Wywołaj funkcję calculateAverageTemperature i przekaż jej tablicę pomiarów temperatury oraz funkcję zwrotną displayAverageTemperature jako argumenty.
+Wywołaj funkcję calculateSum i przekaż do niej tablicę numbers. Następnie zapisz wynik w zmiennej result oraz wyświetl jej wartość w konsoli.
 
 
 
 Oczekiwany wynik:
 
-Srednia temperatura: 23 -->
+15 -->
+
+
 		<script src="./js.js"></script>
 	</body>
 </html>

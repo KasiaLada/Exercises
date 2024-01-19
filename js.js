@@ -36,7 +36,7 @@ test();
 //         return sum;
 //     };
  
-//     const numbers = [1, 2, 3, 4, 5];
+//     const numbers = [1, 2, 3, 4, 5];  Dlaczego tablica jest tutaj, a nie na początku, w funkcji?
 //     const result = calculateSum(numbers);
 //     console.log(result);
 // }
